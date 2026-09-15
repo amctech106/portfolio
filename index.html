@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <a href="#home" class="logo">
+                <span>&lt;</span>Dev<span>/&gt;</span>
+            </a>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="theme-btn" id="themeBtn">
+                🌙
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HERO ==================== -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="small-heading">
+                    HELLO, I'M
+                </p>
+
+                <h1 id="heroName">
+                    Abdul Majeed
+                </h1>
+
+                <h2 id="heroRole">
+                    Frontend Developer
+                </h2>
+
+                <p id="heroDescription">
+                    I create modern, responsive and user-friendly websites
+                    using HTML, CSS and JavaScript.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn primary-btn">
+                        View My Work
+                    </a>
+
+                    <a href="#contact" class="btn secondary-btn">
+                        Contact Me
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-card">
+
+                <div class="code-window">
+
+                    <div class="window-top">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="code-content">
+
+                        <p>
+                            <span class="purple">const</span>
+                            developer =
+                            <span class="yellow">{</span>
+                        </p>
+
+                        <p class="indent">
+                            name:
+                            <span class="green">"Abdul Majeed"</span>,
+                        </p>
+
+                        <p class="indent">
+                            role:
+                            <span class="green">"Developer"</span>,
+                        </p>
+
+                        <p class="indent">
+                            passion:
+                            <span class="green">"Web Development"</span>
+                        </p>
+
+                        <p>
+                            <span class="yellow">}</span>;
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="section about" id="about">
+
+            <div class="section-heading">
+
+                <p>GET TO KNOW ME</p>
+
+                <h2>About Me</h2>
+
+            </div>
+
+            <div class="about-content">
+
+                <div class="about-text">
+
+                    <h3 id="aboutTitle">
+                        A passionate web developer
+                    </h3>
+
+                    <p id="aboutText">
+                        I am a passionate developer who enjoys learning
+                        JavaScript and building useful web applications.
+                        I love turning ideas into clean and functional
+                        interfaces.
+                    </p>
+
+                    <p>
+                        My goal is to continuously improve my programming
+                        skills and build applications that are simple,
+                        useful and enjoyable to use.
+                    </p>
+
+                </div>
+
+
+                <div class="about-info">
+
+                    <div class="info-box">
+                        <strong>01</strong>
+                        <span>Learning</span>
+                    </div>
+
+                    <div class="info-box">
+                        <strong>02</strong>
+                        <span>Building</span>
+                    </div>
+
+                    <div class="info-box">
+                        <strong>03</strong>
+                        <span>Improving</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SKILLS ================= -->
+
+        <section class="section skills" id="skills">
+
+            <div class="section-heading">
+
+                <p>WHAT I USE</p>
+
+                <h2>My Skills</h2>
+
+            </div>
+
+            <div class="skills-container" id="skillsContainer">
+                <!-- JavaScript will add skills here -->
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section class="section projects" id="projects">
+
+            <div class="section-heading">
+
+                <p>MY RECENT WORK</p>
+
+                <h2>Projects</h2>
+
+            </div>
+
+            <div class="projects-container" id="projectsContainer">
+                <!-- Next Projects will be placed here  -->
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="section contact" id="contact">
+
+            <div class="section-heading">
+
+                <p>LET'S CONNECT</p>
+
+                <h2>Contact Me</h2>
+
+            </div>
+
+            <div class="contact-container">
+
+                <div class="contact-info">
+
+                    <h3>Let's work together.</h3>
+
+                    <p>
+                        Have a project idea or just want to say hello?
+                        Feel free to contact me.
+                    </p>
+
+                    <div class="contact-item">
+                        <span>📧</span>
+                        <div>
+                            <small>Email</small>
+                            <p id="email">amc.pk106@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span>📍</span>
+                        <div>
+                            <small>Location</small>
+                            <p id="location">Karachi, Pakistan</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <form class="contact-form" id="contactForm">
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Your Name"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        id="emailInput"
+                        placeholder="Your Email"
+                        required
+                    >
+
+                    <textarea
+                        id="message"
+                        rows="6"
+                        placeholder="Your Message"
+                        required
+                    ></textarea>
+
+                    <button type="submit" class="btn primary-btn">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+            <p>
+                © <span id="year"></span>
+                <span id="footerName">Abdul Majeed</span>.
+                All Rights Reserved.
+            </p>
+
+            <a
+                href="https://github.com/amctech106"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="github-link"
+                aria-label="GitHub Profile"
+            >
+                <span class="github-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M12 2C6.477 2 2 6.582 2 12.253c0 4.53 2.865 8.374 6.839 9.726.5.09.682-.217.682-.484 0-.237-.009-.866-.014-1.7-2.782.606-3.369-1.34-3.369-1.34-.455-1.157-1.11-1.465-1.11-1.465-.908-.62.069-.608.069-.608 1.004.071 1.532 1.03 1.532 1.03.893 1.531 2.341 1.088 2.91.832.091-.647.35-1.088.635-1.338-2.221-.253-4.555-1.112-4.555-4.95 0-1.093.39-1.987 1.029-2.686-.103-.253-.446-1.273.098-2.654 0 0 .84-.269 2.75 1.025A9.5 9.5 0 0 1 12 6.844c.85 0 1.706.114 2.505.336 1.91-1.294 2.747-1.025 2.747-1.025.546 1.381.203 2.401.1 2.654.642.699 1.027 1.593 1.027 2.686 0 3.845-2.338 4.695-4.566 4.944.359.31.679.923.679 1.858 0 1.34-.012 2.421-.012 2.752 0 .269.18.577.688.48A10.254 10.254 0 0 0 22 12.253C22 6.582 17.523 2 12 2Z"/>
+                    </svg>
+                </span>
+                GitHub
+            </a>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
