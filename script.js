@@ -102,7 +102,7 @@ const projects = [
             "JavaScript"
         ],
 
-        link: "#"
+        link: "https://github.com/amctech106/Tafhim-ul-Masail"
     },
 
     {
@@ -118,7 +118,7 @@ const projects = [
             "JavaScript"
         ],
 
-        link: "#"
+        link: "https://quickserve-app-bice.vercel.app/"
     },
 
     {
@@ -134,7 +134,7 @@ const projects = [
             "JavaScript"
         ],
 
-        link: "#"
+        link: "https://amctech106.github.io/Tasbih-Counter/"
     }
 
 ];
