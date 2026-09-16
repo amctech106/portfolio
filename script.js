@@ -200,6 +200,27 @@ if (skillsContainer) {
    DISPLAY PROJECTS
 ===================================================== */
 
+const createProjectLink = function(url) {
+
+    if (!url) return "#";
+
+    if (/^https?:\/\//i.test(url)) {
+        return url;
+    }
+
+    if (/^(\/|\.\/|\.\.\/)/.test(url)) {
+        return new URL(url, window.location.href).href;
+    }
+
+    if (/^[a-z0-9.-]+\.[a-z]{2,}/i.test(url)) {
+        return "https://" + url;
+    }
+
+    return new URL(url, window.location.href).href;
+
+};
+
+
 const projectsContainer =
     document.querySelector("#projectsContainer");
 
@@ -214,6 +235,8 @@ if (projectsContainer) {
             tags += "<span>" + technology + "</span>";
         });
 
+        const projectUrl = createProjectLink(project.link);
+
         const article = document.createElement("article");
         article.className = "project-card";
 
@@ -223,7 +246,7 @@ if (projectsContainer) {
             "<h3>" + project.title + "</h3>" +
             "<p>" + project.description + "</p>" +
             "<div class='project-tags'>" + tags + "</div>" +
-            "<a href='" + project.link + "' class='project-link'>View Project →</a>" +
+            "<a href='" + projectUrl + "' class='project-link' target='_blank' rel='noopener noreferrer'>View Project →</a>" +
             "</div>";
 
         projectsContainer.appendChild(article);
