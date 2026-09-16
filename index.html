@@ -272,6 +272,7 @@
 
                     <input
                         type="text"
+                        name="name"
                         id="name"
                         placeholder="Your Name"
                         required
@@ -279,6 +280,7 @@
 
                     <input
                         type="email"
+                        name="email"
                         id="emailInput"
                         placeholder="Your Email"
                         required
@@ -286,6 +288,7 @@
 
                     <textarea
                         id="message"
+                        name="message"
                         rows="6"
                         placeholder="Your Message"
                         required
@@ -294,6 +297,8 @@
                     <button type="submit" class="btn primary-btn">
                         Send Message
                     </button>
+
+                    <p class="form-status" id="formStatus" aria-live="polite"></p>
 
                 </form>
 
@@ -338,4 +343,3 @@
 
 </body>
 </html>
-```

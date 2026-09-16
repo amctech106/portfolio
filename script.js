@@ -319,16 +319,49 @@ if (themeBtn) {
 const contactForm =
     document.querySelector("#contactForm");
 
+const formStatus =
+    document.querySelector("#formStatus");
+
 
 if (contactForm) {
 
-    contactForm.addEventListener("submit", function(event) {
+    contactForm.addEventListener("submit", async function(event) {
 
         event.preventDefault();
 
-        alert("Thank you! Your message has been received.");
+        if (formStatus) {
+            formStatus.textContent = "Sending...";
+            formStatus.className = "form-status";
+            formStatus.style.display = "block";
+        }
 
-        contactForm.reset();
+        try {
+            const response = await fetch(contactForm.action, {
+                method: "POST",
+                body: new FormData(contactForm),
+                headers: {
+                    "Accept": "application/json"
+                }
+            });
+
+            if (response.ok) {
+                if (formStatus) {
+                    formStatus.textContent = "Thank you! Your message has been received.";
+                    formStatus.className = "form-status success";
+                }
+                contactForm.reset();
+            } else {
+                if (formStatus) {
+                    formStatus.textContent = "Something went wrong. Please try again.";
+                    formStatus.className = "form-status error";
+                }
+            }
+        } catch (error) {
+            if (formStatus) {
+                formStatus.textContent = "Unable to send your message right now.";
+                formStatus.className = "form-status error";
+            }
+        }
 
     });
 
